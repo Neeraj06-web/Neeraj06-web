@@ -1,7 +1,7 @@
 Hey everyone!!
 
-EDUCATION
+EDUCATION:
 i'm currently persuing BBA(CA)...
 
-COLLEGE
+COLLEGE:
 DY Patil ACS Pimpri
