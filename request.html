@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        form#animeForm {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #0000005d;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form#animeForm input[type="text"],
+        form#animeForm input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        form#animeForm button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        form#animeForm button[type="submit"]:hover {
+            background-color: #333;
+        }
+
+
+        .form-wrapper {
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            display: inline-block;
+        }
+
+        .form-wrapper:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        header {
+            background-color: #333;
+            color: #47c1e2;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        body {
+            padding-top: 60px; /* Adjust this value based on the height of your header */
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+ <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">Game spot</div>
+      <ul>
+        <li><a href="HOME.html">Home</a></li>
+        <li><a href="explore.html ">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Request</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="form-wrapper" id="formWrapper">
+    <form id="animeForm" method="POST" action="request_form.php">
+    <h2>Request an Game</h2>
+    <p>Can't find your favorite Game? Request it here!</p>
+    <input type="text" name="u_name" placeholder="Your Name" required><br>
+    <input type="email" name="u_eid" placeholder="Your Email" required><br>  
+    <input type="text" name="g_name" placeholder="Game Name" required><br> 
+    <button type="submit" onclick="handleSubmit(event)">Submit Request</button>
+</form>
+<div class="message" id="formMessage" style="display: none;">
+    <p>✨ Your request has been submitted successfully! ✨</p>
+    <button class="close-btn" onclick="dismissFormMessage()">×</button>
+</div>
+</div>
+    <script src="request.js"></script>
+</body>
+</html>

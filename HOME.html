@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game spot</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">Game spot</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="explore.html ">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="request.html">Request</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Game spot</h1>
+    <p>Your destination for the latest and greatest games.</p>
+    <a href="explore.html">
+      <button onclick="showModal()">Explore Now</button>
+    </a>
+  </section>
+
+  <!-- Game Cards Section -->
+  <section class="games">
+    </head>
+
+    <body>
+      <div class="game-card">
+        <a href="Pacman.html" target="_blank">
+          <img src="images.jpg" alt="PAC-MAN">
+          <h3>PAC-MAN</h3>
+        </a>
+      </div>
+      
+      <div class="game-card">
+        <a href="new snakes.html" target="_blank">
+          <img src="snakie.png" alt="SNAKE GAME">
+          <h3>SNAKE GAME</h3>
+        </a>
+      </div>
+
+      <div class="game-card">
+        <a href="Tic tac toe.html" target="_blank">
+          <img src="download.png" alt="TIC-TAC-TOE">
+          <h3>TIC-TAC-TOE</h3>
+        </a>
+      </div>
+
+
+      <div class="game-card">
+        <a href="new flappy.html" target="_blank">
+          <img src="aditya.jpg" alt="FLAPPY BIRD">
+          <h3>FLAPPY BIRD</h3>
+        </a>
+      </div>
+  </section>
+
+
+  <!-- Modal -->
+  <div class="modal" id="gameModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle">Game Details</h2>
+      <p id="modalDescription">More information about the game...</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Game spot. All rights reserved.</p>
+  </footer>
+
+  <script src="support.js"></script>
+</body>
+</html>
