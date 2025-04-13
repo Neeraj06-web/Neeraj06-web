@@ -9,7 +9,7 @@
 
 <p align="left"> <a href="https://twitter.com/neerajmajil06" target="blank"><img src="https://img.shields.io/twitter/follow/neerajmajil06?logo=twitter&style=for-the-badge" alt="neerajmajil06" /></a> </p>
 
-- 🌱 I’m currently learning **BBB(CA)course**
+- 🌱 I’m currently learning **BBB(CA)**
 
 - 💬 Ask me about **Android**
 
